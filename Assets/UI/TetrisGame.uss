@@ -1,0 +1,35 @@
+/* BLOCK//DROP UI Toolkit — dark neon mobile arcade */
+.game-root { flex-grow: 1; background-color: #0A0E18; padding-top: 22px; padding-right: 18px; padding-bottom: 18px; padding-left: 18px; }
+.top-bar { flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.brand { flex-direction: row; align-items: baseline; }
+.brand-main { color: #F3F7FF; font-size: 26px; -unity-font-style: bold; letter-spacing: 1px; }
+.brand-accent { color: #38D6E8; font-size: 26px; -unity-font-style: bold; letter-spacing: 1px; }
+.icon-button { width: 44px; height: 44px; border-radius: 12px; background-color: #182235; color: #B9C8DD; border-width: 1px; border-color: #29384F; font-size: 18px; }
+.stats-row { flex-direction: row; gap: 10px; margin-bottom: 12px; }
+.stat-card { flex-grow: 1; background-color: #141C2B; border-radius: 14px; padding: 12px; border-width: 1px; border-color: #202C40; }
+.stat-label { color: #71839B; font-size: 10px; letter-spacing: 2px; -unity-font-style: bold; }
+.stat-value { color: #F4F7FC; font-size: 24px; -unity-font-style: bold; margin-top: 4px; }
+.accent-value { color: #38D6E8; }
+.game-info-row { flex-direction: row; justify-content: space-between; align-items: stretch; margin-bottom: 12px; gap: 10px; }
+.level-card, .next-card { background-color: #141C2B; border-radius: 14px; border-width: 1px; border-color: #202C40; padding: 12px; }
+.level-card { flex-grow: 1; justify-content: center; }
+.level-value { color: #FFFFFF; font-size: 22px; -unity-font-style: bold; margin-top: 4px; }
+.level-progress-track { height: 5px; background-color: #263449; border-radius: 4px; margin-top: 10px; }
+.level-progress-fill { width: 40%; height: 5px; background-color: #38D6E8; border-radius: 4px; }
+.next-card { width: 112px; align-items: center; }
+.next-piece-grid { width: 72px; height: 72px; margin-top: 8px; }
+.board-container { flex-grow: 1; min-height: 300px; background-color: #101827; border-radius: 14px; border-width: 1px; border-color: #263449; padding: 5px; }
+.board-grid { flex-grow: 1; }
+.controls { margin-top: 14px; gap: 10px; }
+.control-row { flex-direction: row; justify-content: center; gap: 10px; }
+.control-button { flex-grow: 1; height: 58px; background-color: #192438; color: #DCE8F7; border-radius: 14px; border-width: 1px; border-color: #29384F; font-size: 22px; }
+.rotate-button { color: #38D6E8; }
+.secondary-controls { gap: 10px; }
+.secondary-button { flex-grow: 1; height: 44px; background-color: #141C2B; color: #9FB0C8; border-radius: 12px; border-width: 1px; border-color: #263449; font-size: 11px; letter-spacing: 1px; }
+.hard-drop { color: #38D6E8; background-color: #132532; border-color: #215164; }
+.game-overlay { position: absolute; left: 0; right: 0; top: 0; bottom: 0; justify-content: center; align-items: center; background-color: rgba(5, 8, 14, 0.88); padding: 28px; }
+.hidden { display: none; }
+.overlay-title { color: #38D6E8; font-size: 32px; -unity-font-style: bold; margin-bottom: 8px; }
+.overlay-subtitle { color: #8FA2BC; font-size: 14px; margin-bottom: 24px; }
+.overlay-action { width: 100%; height: 52px; background-color: #38D6E8; color: #0A0E18; border-radius: 14px; -unity-font-style: bold; font-size: 14px; margin-bottom: 10px; }
+.overlay-secondary-action { width: 100%; height: 48px; background-color: #182235; color: #C1CDDE; border-radius: 14px; border-width: 1px; border-color: #29384F; font-size: 12px; }
