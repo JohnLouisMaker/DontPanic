@@ -1,0 +1,55 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Style src="TetrisGame.uss" />
+    <ui:VisualElement class="game-root">
+        <ui:VisualElement class="top-bar">
+            <ui:VisualElement class="brand">
+                <ui:Label text="BLOCK" class="brand-main" />
+                <ui:Label text="// DROP" class="brand-accent" />
+            </ui:VisualElement>
+            <ui:Button name="pause-button" text="Ⅱ" class="icon-button" />
+        </ui:VisualElement>
+        <ui:VisualElement class="stats-row">
+            <ui:VisualElement class="stat-card">
+                <ui:Label text="SCORE" class="stat-label" />
+                <ui:Label name="score-label" text="000000" class="stat-value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="stat-card">
+                <ui:Label text="BEST" class="stat-label" />
+                <ui:Label name="best-label" text="000000" class="stat-value accent-value" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="game-info-row">
+            <ui:VisualElement class="level-card">
+                <ui:Label text="LEVEL" class="stat-label" />
+                <ui:Label name="level-label" text="01" class="level-value" />
+                <ui:VisualElement class="level-progress-track">
+                    <ui:VisualElement name="level-progress" class="level-progress-fill" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="next-card">
+                <ui:Label text="NEXT" class="stat-label" />
+                <ui:VisualElement name="next-piece-grid" class="next-piece-grid" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="board-container" class="board-container">
+            <ui:VisualElement name="board-grid" class="board-grid" />
+        </ui:VisualElement>
+        <ui:VisualElement class="controls">
+            <ui:VisualElement class="control-row">
+                <ui:Button name="left-button" text="◀" class="control-button" />
+                <ui:Button name="rotate-button" text="↻" class="control-button rotate-button" />
+                <ui:Button name="right-button" text="▶" class="control-button" />
+            </ui:VisualElement>
+            <ui:VisualElement class="control-row secondary-controls">
+                <ui:Button name="soft-drop-button" text="SOFT DROP  ↓" class="secondary-button" />
+                <ui:Button name="hard-drop-button" text="HARD DROP  ⇊" class="secondary-button hard-drop" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="overlay" class="game-overlay hidden">
+            <ui:Label name="overlay-title" text="PAUSED" class="overlay-title" />
+            <ui:Label name="overlay-subtitle" text="Take a breath." class="overlay-subtitle" />
+            <ui:Button name="resume-button" text="RESUME" class="overlay-action" />
+            <ui:Button name="restart-button" text="RESTART" class="overlay-secondary-action" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
